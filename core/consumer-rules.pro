@@ -78,6 +78,8 @@ public *;
 *** rewind();
 }
 
+-keep class com.dicoding.favorite.** { *;}
+
 # Uncomment for DexGuard only
 #-keepresourcexmlelements manifest/application/meta-data@value=GlideModule
 
