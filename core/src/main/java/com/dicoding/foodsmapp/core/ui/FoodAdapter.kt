@@ -40,7 +40,6 @@ class FoodAdapter : RecyclerView.Adapter<FoodAdapter.ListViewHolder>() {
                     .load(data.strCategoryThumb)
                     .into(ivItemImage)
                 tvItemTitle.text = data.strCategory
-                tvItemSubtitle.text = data.strCategoryDescription
             }
         }
 

@@ -39,7 +39,7 @@
             android:id="@+id/top_space"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@+id/tv_item_title"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -48,32 +48,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
             android:background="#DDDDDD"
             android:text="@string/text_primary"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textColor="#00000000"
-            app:layout_constraintBottom_toTopOf="@+id/tv_item_subtitle"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bottom_space" />
 
-        <TextView
-            android:id="@+id/tv_item_subtitle"
+        <Space
+            android:id="@+id/bottom_space"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:background="#DDDDDD"
-            android:text="@string/text_subtitle"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#00FFFFFF"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_item_image"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_item_title"
             app:layout_constraintStart_toStartOf="parent" />
 
 
